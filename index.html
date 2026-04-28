@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>House of Dolls</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #080808;
+      color: #f2eee8;
+      font-family: Georgia, serif;
+    }
+
+    header {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.75)), url("33.jpg") center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 9vw, 8rem);
+      color: #c11212;
+      font-style: italic;
+      font-weight: normal;
+      line-height: 0.9;
+    }
+
+    header p {
+      max-width: 650px;
+      margin-top: 25px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #ddd;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(8px);
+      z-index: 10;
+    }
+
+    nav a {
+      color: #f2eee8;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    .logo {
+      color: #c11212;
+      font-style: italic;
+      font-size: 1.4rem;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .intro h2,
+    .gallery-title,
+    .contact h2 {
+      color: #c11212;
+      font-size: 2.3rem;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    .gallery-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      border: 1px solid #2a2a2a;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      opacity: 0.85;
+    }
+
+    .quote {
+      text-align: center;
+      font-size: 1.4rem;
+      color: #c11212;
+      font-style: italic;
+      padding: 80px 20px;
+      background: #111;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 26px;
+      border: 1px solid #c11212;
+      color: #c11212;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        padding: 15px 20px;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 0.75rem;
+      }
+
+      .gallery img {
+        height: 360px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">House of Dolls</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>House Of Dolls</h1>
+    <p>I still listen, I still look, I wait still.</p>
+  </header>
+
+  <section id="about" class="intro">
+    <h2>About the Series</h2>
+    <p>
+      House of Dolls is a cinematic photography series exploring longing, melancholy,
+      abandonment, and emotional distance. The images present different figures as
+      fragile, doll-like characters who continue to wait for someone who may never return.
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2 class="gallery-title">Gallery</h2>
+    <div class="gallery">
+      <img src="33.jpg" alt="House of Dolls balcony red umbrella photo" />
+      <img src="34.jpg" alt="House of Dolls garden photo" />
+      <img src="35.jpg" alt="House of Dolls mirror photo" />
+      <img src="36.jpg" alt="House of Dolls black and white garden photo" />
+      <img src="37.jpg" alt="House of Dolls red umbrella two models photo" />
+      <img src="38.jpg" alt="House of Dolls indoor doll-like portrait photo" />
+    </div>
+  </section>
+
+  <div class="quote">
+    “A story of longing, identity, and isolation.”
+  </div>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Photography by 8S.PICS × Bel Padman</p>
+    <a class="button" href="https://www.instagram.com/" target="_blank">View Instagram</a>
+  </section>
+
+  <footer>
+    © 2026 House of Dolls. All rights reserved.
+  </footer>
+</body>
+</html>
